@@ -58,10 +58,6 @@ for ca in category:
             if word2 in word_frequence_count.keys():
                 continue;
             word_frequence_count[word2] = word_frequence.count(word2)
-        
-        
-
-
 
     # 카테고리 별 단어의 빈도 수
     word_count = {}

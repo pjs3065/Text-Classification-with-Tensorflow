@@ -75,10 +75,14 @@ for word in lower_category_word:
 print(cf)
 
 print("2차 추출(적은 카테고리에 단어가 등장하는 단어들 중 빈도수가 2이상인 단 어", len(five_thousand))
+five_thousand.sort()
 print(five_thousand)
 print("-------------------------------------------------------------------------------")
 
-
+file = open('./five_thousand_word.txt', 'w', encoding='utf8')
+for word in five_thousand:
+    file.write(word + '\t')
+file.close()
 
 
 '''
