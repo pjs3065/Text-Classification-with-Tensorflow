@@ -85,6 +85,3 @@ for i in range(0, len(dict)):
     dict[i] = dict[i] + (TF,)
 print(dict)
 '''
-
-# 파일 닫기
-file.close()
