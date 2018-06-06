@@ -19,8 +19,105 @@ category_dict = {"child": 129, "culture": 220, "economy": 167, "education": 121,
 category_list = {"child": child, "culture": culture, "economy": economy, "education": education, "health": health, "life": life, "person": person,"policy": policy, "society": society}
 total_document = 1687
 
-# 각 카테고리에 단어가 문서에 등장하는 정도가 적은 단어와 나머지 단어 분리하기
+
+# 각 카테고리에 단어가 문서에 등장하는 정도가 적은 단어와 나머지 단어 분리하기 (15579, 9098)
 lower_category_word = {}
+
+for word in all_word_list:
+    count = 0
+    max = -1
+    c = ""
+    for ca in category_list:
+        li = category_list[ca]
+        if word in li.keys():
+            count += 1
+            c = ca
+    if count <= 2:
+        lower_category_word[word] = c
+
+print("1차 추출(적은 카테고리에 단어가 등장하는 단어들)", len(lower_category_word))
+print(lower_category_word)
+
+cf = {}
+
+# 빈도수
+for word in lower_category_word:
+    c = category_list[lower_category_word[word]]
+    c_f = c[word]
+    cf[word] = c_f
+print(cf)
+
+# 빈도수 내림차순
+
+dict = sorted(cf.items(), key = operator.itemgetter(1), reverse = True)
+print(dict)
+
+fre_dict_list = []
+
+for i in range(len(dict)):
+    fre_dict_list.append(dict[i][0])
+
+print(fre_dict_list)
+
+chil = 0
+cult = 0
+eco = 0
+edu = 0
+hea = 0
+lif = 0
+pers = 0
+poli = 0
+soci = 0
+
+five_thousand = []
+
+for word in fre_dict_list:
+    c = lower_category_word[word]
+    if c == 'child' and chil <= 555:
+        chil += 1
+        five_thousand.append(word)
+    elif c == 'culture'and cult <= 555:
+        cult += 1
+        five_thousand.append(word)
+    elif c == 'economy' and eco <= 555:
+        eco += 1
+        five_thousand.append(word)
+    elif c == 'education' and edu <= 555:
+        edu += 1
+        five_thousand.append(word)
+    elif c == 'health' and hea <= 555:
+        hea += 1
+        five_thousand.append(word)
+    elif c == 'life' and lif <= 555:
+        lif += 1
+        five_thousand.append(word)
+    elif c == 'person' and pers <= 555:
+        pers+= 1
+        five_thousand.append(word)
+    elif c == 'policy' and poli <= 555:
+        poli += 1
+        five_thousand.append(word)
+    elif c == 'society' and soci <= 551:
+        soci += 1
+        five_thousand.append(word)
+print(five_thousand)
+print(len(five_thousand))
+print(chil,cult,eco,edu,hea,lif,pers,poli,soci)
+
+five_thousand.sort()
+print(five_thousand)
+
+file = open('./five_thousand_word.txt', 'w', encoding='utf8')
+for word in five_thousand:
+    file.write(word + '\t')
+file.close()
+
+
+
+'''
+# 각 카테고리에 단어가 문서에 등장하는 정도가 적은 단어와 나머지 단어 분리하기 (15579, 9098)
+lower_category_word = {}
+upper_category_word = {}
 
 for word in all_word_list:
     count = 0
@@ -43,50 +140,14 @@ for word in lower_category_word:
     c = category_list[lower_category_word[word]]
     c_f = c[word]
     cf[word] = c_f
+print(cf)
 
-# 빈도수가 높은 순서대로 소팅(리스트 안의 튜플이 됨)
+
+# 빈도수가 높은 순서대로 소팅(리스트 안의 튜플이 됨) / 중간 값 : 3
 dict = sorted(cf.items(), key = operator.itemgetter(1), reverse = True)
-
-'''
 median_index = (int)(len(dict) / 2)
 median = dict[median_index][1]
-'''
 
-five_thousand = []
-
-chil = 0
-cult = 0
-eco = 0
-edu = 0
-hea = 0
-lif = 0
-pers = 0
-poli = 0
-soci = 0
-
-cff = {"child": chil, "culture": cult, "economy": eco, "education": edu, "health": hea, "life": lif, "person": pers,"policy": poli, "society": soci}
-
-limit = 1
-for word in dict:
-    five_thousand.append(word[0])
-    if limit == 5000 : break
-    limit += 1
-
-five_thousand.sort()
-print(five_thousand)
-
-
-
-
-# 파일 출력
-file = open('./five_thousand_word.txt', 'w')
-for word in five_thousand:
-    file.write(word)
-    file.write("\t")
-file.close()
-
-
-'''
 print(dict)
 # 1차 5000개 리스트에 추가해주기 (적은 카테고리에 단어가 등장하는 단어들 중 빈도수가 2이상인 단어 19874개)
 five_thousand = []
@@ -125,9 +186,8 @@ file = open('./five_thousand_word.txt', 'w', encoding='utf8')
 for word in five_thousand:
     file.write(word + '\t')
 file.close()
-'''
 
-'''
+
 
 # 2차 5000개 리스트에 추가해주기 (나머지 카테고리에 단어가 등장하는 단어들 중 빈도수가 높은 단어 5000개)
 print("1차 추출(많은 카테고리에 단어가 등장하는 단어들)", len(upper_category_word))
