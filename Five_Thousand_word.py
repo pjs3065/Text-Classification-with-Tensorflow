@@ -17,11 +17,10 @@ all_word_list = ['전통악기', '설문왜곡', '대선캠프', '공천로비',
 
 category_dict = {"child": 129, "culture": 220, "economy": 167, "education": 121, "health": 192, "life": 113, "person": 173,"policy": 253, "society": 328}
 category_list = {"child": child, "culture": culture, "economy": economy, "education": education, "health": health, "life": life, "person": person,"policy": policy, "society": society}
-total_document = 1696
+total_document = 1687
 
-# 각 카테고리에 단어가 문서에 등장하는 정도가 적은 단어와 나머지 단어 분리하기 (15579, 9098)
+# 각 카테고리에 단어가 문서에 등장하는 정도가 적은 단어와 나머지 단어 분리하기
 lower_category_word = {}
-upper_category_word = {}
 
 for word in all_word_list:
     count = 0
@@ -31,21 +30,64 @@ for word in all_word_list:
         li = category_list[ca]
         if word in li.keys():
             count += 1
-            if max < li[word]:
-                c = ca
-    if count <= 2:
+            c = ca
+    if count == 1:
         lower_category_word[word] = c
-    else:
-        upper_category_word[word] = c
 
 print("1차 추출(적은 카테고리에 단어가 등장하는 단어들)", len(lower_category_word))
 print(lower_category_word)
 
-# 빈도수가 높은 순서대로 소팅(리스트 안의 튜플이 됨) / 중간 값 : 3
-dict = sorted(all_category.items(), key = operator.itemgetter(1), reverse = True)
+cf = {}
+
+for word in lower_category_word:
+    c = category_list[lower_category_word[word]]
+    c_f = c[word]
+    cf[word] = c_f
+
+# 빈도수가 높은 순서대로 소팅(리스트 안의 튜플이 됨)
+dict = sorted(cf.items(), key = operator.itemgetter(1), reverse = True)
+
+'''
 median_index = (int)(len(dict) / 2)
 median = dict[median_index][1]
+'''
 
+five_thousand = []
+
+chil = 0
+cult = 0
+eco = 0
+edu = 0
+hea = 0
+lif = 0
+pers = 0
+poli = 0
+soci = 0
+
+cff = {"child": chil, "culture": cult, "economy": eco, "education": edu, "health": hea, "life": lif, "person": pers,"policy": poli, "society": soci}
+
+limit = 1
+for word in dict:
+    five_thousand.append(word[0])
+    if limit == 5000 : break
+    limit += 1
+
+five_thousand.sort()
+print(five_thousand)
+
+
+
+
+# 파일 출력
+file = open('./five_thousand_word.txt', 'w')
+for word in five_thousand:
+    file.write(word)
+    file.write("\t")
+file.close()
+
+
+'''
+print(dict)
 # 1차 5000개 리스트에 추가해주기 (적은 카테고리에 단어가 등장하는 단어들 중 빈도수가 2이상인 단어 19874개)
 five_thousand = []
 
@@ -83,7 +125,7 @@ file = open('./five_thousand_word.txt', 'w', encoding='utf8')
 for word in five_thousand:
     file.write(word + '\t')
 file.close()
-
+'''
 
 '''
 
