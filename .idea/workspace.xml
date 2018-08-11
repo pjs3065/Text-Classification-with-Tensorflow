@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfd79d72-0cb8-4f3f-a7b1-3f4f59a7e857" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Five_Thousand_word(useX).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Performance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TF-IDF.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_129.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_130.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_131.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_132.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_134.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_135.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_136.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_137.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/child/(POS)child_138.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_220.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_221.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_222.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_223.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_224.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_225.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_226.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_227.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_228.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/culture/(POS)culture_229.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_167.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_168.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_169.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_170.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_171.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_172.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_173.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_174.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_175.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/economy/(POS)economy_176.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_121.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_122.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_123.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_124.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_125.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_126.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_127.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_128.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_129.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/education/(POS)education_130.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_192.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_193.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_194.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_195.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_196.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_197.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_198.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_199.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/health/(POS)health_201.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_113.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_114.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_115.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_116.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_117.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_118.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_119.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_120.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_121.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/life/(POS)life_122.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_173.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_174.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_175.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_176.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_177.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_178.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_179.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_180.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_181.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/person/(POS)person_182.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_253.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_254.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_255.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_256.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_257.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_258.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_259.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_260.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_261.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_262.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_263.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_265.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_266.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/policy/(POS)policy_267.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_328.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_329.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_330.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_331.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_332.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_333.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_334.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_335.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_336.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_337.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_338.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_339.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_340.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_341.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Data/society/(POS)society_342.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/74퍼/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/74퍼/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/76/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/76/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/80퍼/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/80퍼/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/81퍼/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/81퍼/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/idf와 cf 값이 큰 값 추출 80퍼/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/idf와 cf 값이 큰 값 추출 80퍼/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/idf와 cf 값이 큰 값 추출 81퍼/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/idf와 cf 값이 큰 값 추출 81퍼/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/결과값/74퍼(성공3).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/결과값/76퍼.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/결과값/80퍼( 큰값으로 했을 경우).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/결과값/80퍼.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/결과값/81퍼(큰 값으로 햇을 경우 ).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unnormal/결과값/81퍼.PNG" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Frequency(idf_cf_lower).py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2014">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TF-IDF(HIGH).py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TF-IDF(HIGH).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5235">
+              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Performance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Performance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TF_IDF.py" />
+        <option value="$PROJECT_DIR$/show_me.py" />
+        <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/TF-IDF.py" />
+        <option value="$PROJECT_DIR$/Frequency(idf_cf_upper).py" />
+        <option value="$PROJECT_DIR$/TF-IDF(HIGH).py" />
+        <option value="$PROJECT_DIR$/Performance.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Text_Classification" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Text_Classification" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../word2Vec" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Performance">
+    <configuration name="Frequency(idf_cf_lower)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Text_Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Frequency(idf_cf_lower).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Frequency(idf_cf_upper)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Text_Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Frequency(idf_cf_upper).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Performance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Text_Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Performance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="TF-IDF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Text_Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TF-IDF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="TF-IDF(HIGH)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Text_Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TF-IDF(HIGH).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.TF-IDF" />
+      <item itemvalue="Python.Performance" />
+      <item itemvalue="Python.Frequency(idf_cf_upper)" />
+      <item itemvalue="Python.TF-IDF(HIGH)" />
+      <item itemvalue="Python.Frequency(idf_cf_lower)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Performance" />
+        <item itemvalue="Python.TF-IDF(HIGH)" />
+        <item itemvalue="Python.Frequency(idf_cf_lower)" />
+        <item itemvalue="Python.TF-IDF" />
+        <item itemvalue="Python.Frequency(idf_cf_upper)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfd79d72-0cb8-4f3f-a7b1-3f4f59a7e857" name="Default" comment="" />
+      <created>1527824265603</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527824265603</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2045277" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39070567" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.28399312" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TF-IDF(HIGH).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2356">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TF-IDF(HIGH).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3857">
+          <caret line="205" column="24" selection-start-line="205" selection-start-column="24" selection-end-line="205" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2394">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TF-IDF(HIGH).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3895">
+          <caret line="205" column="24" lean-forward="true" selection-start-line="205" selection-start-column="24" selection-end-line="205" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2356">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_upper).py" />
+    <entry file="file://$PROJECT_DIR$/TF-IDF.py" />
+    <entry file="file://$PROJECT_DIR$/TF-IDF(HIGH).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4332">
+          <caret line="230" column="35" selection-start-line="230" selection-start-column="35" selection-end-line="230" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="111" lean-forward="true" selection-start-line="46" selection-start-column="111" selection-end-line="46" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TF-IDF.py" />
+    <entry file="file://$PROJECT_DIR$/Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TF-IDF.py" />
+    <entry file="file://$PROJECT_DIR$/TF_IDF.py" />
+    <entry file="file://$PROJECT_DIR$/Text-Classification-with-Tensorflow/TF_IDF.py" />
+    <entry file="file://$PROJECT_DIR$/TF_IDF.py" />
+    <entry file="file://$PROJECT_DIR$/TF-IDF.py" />
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_upper).py" />
+    <entry file="file://$PROJECT_DIR$/Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frequency(idf_cf_lower).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TF-IDF(HIGH).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5235">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
